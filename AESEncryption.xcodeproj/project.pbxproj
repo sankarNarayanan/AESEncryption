@@ -15,7 +15,7 @@
 		01D588AD1BCAE6C2008051F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D588AB1BCAE6C2008051F6 /* LaunchScreen.storyboard */; };
 		01D588B81BCAE6C2008051F6 /* AESEncryptionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D588B71BCAE6C2008051F6 /* AESEncryptionTests.m */; };
 		01D588C31BCAE6C2008051F6 /* AESEncryptionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D588C21BCAE6C2008051F6 /* AESEncryptionUITests.m */; };
-		01D588D31BCAE6EB008051F6 /* AESEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D588D11BCAE6EB008051F6 /* AESEncrypt.m */; settings = {ASSET_TAGS = (); }; };
+		01D588D61BCAEA54008051F6 /* AESEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D588D51BCAEA54008051F6 /* AESEncrypt.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		01D588BE1BCAE6C2008051F6 /* AESEncryptionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AESEncryptionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D588C21BCAE6C2008051F6 /* AESEncryptionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AESEncryptionUITests.m; sourceTree = "<group>"; };
 		01D588C41BCAE6C2008051F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		01D588D11BCAE6EB008051F6 /* AESEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESEncrypt.m; sourceTree = "<group>"; };
-		01D588D21BCAE6EB008051F6 /* AESEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESEncrypt.h; sourceTree = "<group>"; };
+		01D588D41BCAEA54008051F6 /* AESEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AESEncrypt.h; path = AESEncryption/AESEncrypt.h; sourceTree = "<group>"; };
+		01D588D51BCAEA54008051F6 /* AESEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AESEncrypt.m; path = AESEncryption/AESEncrypt.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,8 +147,8 @@
 		01D588D01BCAE6DA008051F6 /* AESEncryption */ = {
 			isa = PBXGroup;
 			children = (
-				01D588D11BCAE6EB008051F6 /* AESEncrypt.m */,
-				01D588D21BCAE6EB008051F6 /* AESEncrypt.h */,
+				01D588D41BCAEA54008051F6 /* AESEncrypt.h */,
+				01D588D51BCAEA54008051F6 /* AESEncrypt.m */,
 			);
 			name = AESEncryption;
 			sourceTree = "<group>";
@@ -287,9 +287,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				01D588A51BCAE6C2008051F6 /* ViewController.m in Sources */,
-				01D588D31BCAE6EB008051F6 /* AESEncrypt.m in Sources */,
 				01D588A21BCAE6C2008051F6 /* AppDelegate.m in Sources */,
 				01D5889F1BCAE6C2008051F6 /* main.m in Sources */,
+				01D588D61BCAEA54008051F6 /* AESEncrypt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +515,7 @@
 				01D588C91BCAE6C2008051F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01D588CA1BCAE6C2008051F6 /* Build configuration list for PBXNativeTarget "AESEncryptionTests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +524,7 @@
 				01D588CC1BCAE6C2008051F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01D588CD1BCAE6C2008051F6 /* Build configuration list for PBXNativeTarget "AESEncryptionUITests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +533,7 @@
 				01D588CF1BCAE6C2008051F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
